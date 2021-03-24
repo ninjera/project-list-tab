@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar> <ion-title>FAQs</ion-title> </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      Preguntas más frecuentes sobre las vacunas
+    </ion-list-header>
+    <ion-item *ngFor="let question of questions">
+      {{question.id}} / {{questions.length}} - {{question.question}}
+    </ion-item>
+  </ion-list>
+</ion-content>
